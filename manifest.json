@@ -1,0 +1,17 @@
+{
+    "name": "pomodora",
+    "short_name": "pomodora",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "assets/pomodora.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "ssets/pomodora.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

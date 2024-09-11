@@ -4,11 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/pomodoro.png" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" type="text/css" href="src/styles/reset.css" />
-    <title>PomoDora</title>
+    <title>
+      PomoDora - Boost Productivity with Fun Focus Sessions | Inspired by Dora
+      the Explorer
+    </title>
+    <meta
+      name="description"
+      content="Boost your productivity with PomoDora, a fun and engaging web app inspired by Dora the Explorer. Stay focused, thrive, and reach your goals step by step, just like Dora on her adventures!"
+    />
+    <meta
+      property="og:title"
+      content="PomoDora - Boost Productivity with Fun Focus Sessions"
+    />
+    <meta
+      property="og:description"
+      content="Stay focused and reach your goals with PomoDora, a productivity app inspired by Dora the Explorer."
+    />
+    <meta
+      property="og:image"
+      content="https://jiekudev.github.io/pomodora/assets/pomodoro.png"
+    />
+    <meta property="og:url" content="https://jiekudev.github.io/pomodora/" />
+
+    <meta
+      name="keywords"
+      content="Pomodoro, productivity app, focus timer, PomoDora, Dora the Explorer, time management"
+    />
+    <meta name="author" content="Jake Lourence A. Villar" />
+
+    <link rel="canonical" href="https://jiekudev.github.io/pomodora/" />
   </head>
   <body>
-    <h1>TEST DORAAA</h1>
+    <div class="pomodoro-app">
+      <h1>PomoDora - Stay Focused and Reach Your Goals!</h1>
+
+      <div class="timer-display">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+
+      <!-- Timer Controls -->
+      <div class="timer-controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <!-- Session Length Setting -->
+      <div class="session-settings">
+        <label for="session-length">Set Session Length (minutes): </label>
+        <input type="number" id="session-length" value="25" min="1" max="60" />
+      </div>
+    </div>
+
     <script src="src/scripts/config.js"></script>
   </body>
 </html>
